@@ -47,9 +47,9 @@ I went with FastAPI for the backend because, honestly, it just makes life easier
 SQLite was a no-brainer for this project. No setup headaches, no server configuration - it just works. And since this was meant to be a prototype that anyone could run immediately, simplicity won out over fancy database features.
 The thing I'm most proud of is the mock LLM service. I knew not everyone would have an OpenAPI key lying around, so I built something that actually gives you useful results using NLTK and some basic sentiment analysis. It's not GPT-4, but it'll show you what the system can do.
 
-## ⏰ Time Trade-offs
+## Trade-offs
 
-With just 90 minutes on the clock, I had to make some tough calls. The search functionality is pretty basic - just substring matching instead of proper full-text search. The database schema is intentionally simple (no fancy relationships that would eat up time). And instead of pulling in a whole UI library, I just wrote the CSS myself. Sometimes the scrappy approach is the right approach.
+I had to make some tough calls. The search functionality is pretty basic - just substring matching instead of proper full-text search. The database schema is intentionally simple (no fancy relationships that would eat up time). And instead of pulling in a whole UI library, I just wrote the CSS myself. Sometimes the scrappy approach is the right approach.
 The mock mode was actually where I spent extra time, because I wanted people to see real value even without connecting to external APIs. It had to feel intelligent, not like a placeholder.
 
 ## 🎯 Core Features
